@@ -26,12 +26,12 @@ A ideia é gerenciar tarefas de uma lista *to-do*, permitindo adicionar, listar,
 Crie o banco e tabela no MySQL:
 
 ```sql
-CREATE DATABASE todo_java;
+CREATE DATABASE lista_java;
 
-USE todo_java;
+USE lista_java;
 
 CREATE TABLE tasks (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  title VARCHAR(100) NOT NULL,
-  done BOOLEAN DEFAULT false
+  titulo VARCHAR(100) NOT NULL,
+  realizada BOOLEAN DEFAULT false
 );
